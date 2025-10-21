@@ -81,7 +81,7 @@ model=simple_net()
 optimiser = optim.Adam(model.parameters(), lr=0.01)
 lf = nn.CrossEntropyLoss()
 
-""" i have not used inbuilt torch vision dataset. I have included the code for creating your own torch dataset if you are planning to use your own dataset."""
+""" i have not used inbuilt torch vision dataset. I have included the code for creating your own torch dataset."""
 
 class my_data(torch.utils.data.Dataset):
 
@@ -220,6 +220,7 @@ with torch.no_grad():
 
 final_accuracy = accuracy.compute()
 print(f'Test Accuracy: {final_accuracy:.4f}')
+
 
 
 
